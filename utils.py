@@ -1,5 +1,4 @@
 import model2nx
-from collections import deque
 import datetime
 import os
 import fnmatch
@@ -8,7 +7,6 @@ import numpy as np
 from torch.utils import tensorboard
 import xmltodict
 import json
-import torch.nn.functional as F
 import torch
 from tensorflow.core.util import event_pb2
 from tensorflow.python.lib.io import tf_record

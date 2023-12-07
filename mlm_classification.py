@@ -109,8 +109,8 @@ def train_mlm(seen_graphs, unseen_graphs, args):
     print("Unseen train dataset size:", len(train_dataset_unseen), "Total masked tokens", total_mask(train_dataset_unseen))
     print("Unseen test dataset size:", len(test_dataset_unseen), "Total masked tokens", total_mask(test_dataset_unseen))
 
-    train_dataloader = torch.utils.data.DataLoader(train_dataset_seen, batch_size=args.lm_batch_size, shuffle=True)
-    test_dataloader = torch.utils.data.DataLoader(test_dataset_seen, batch_size=args.lm_batch_size, shuffle=True)
+    # train_dataloader = torch.utils.data.DataLoader(train_dataset_seen, batch_size=args.lm_batch_size, shuffle=True)
+    # test_dataloader = torch.utils.data.DataLoader(test_dataset_seen, batch_size=args.lm_batch_size, shuffle=True)
     
     # tokenizer = AutoTokenizer.from_pretrained(model_name)
 
